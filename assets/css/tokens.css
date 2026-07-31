@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* color scale */
+  --brown-950: #0d1117;
+  --brown-900: #161b22;
+  --brown-800: #21262d;
+  --brown-700: #30363d;
+  --brown-600: #484f58;
+  --brown-500: #6e7681;
+  --brown-400: #8b949e;
+  --brown-300: #b1bac4;
+  --brown-200: #d0d7de;
+  --brown-100: #eaeef2;
+  --brown-50: #f6f8fa;
+  --white: #ffffff;
+
+  --accent: #3b82f6;
+  --accent-dark: #2563eb;
+  --accent-light: #dbeafe;
+  --success: #3fb950;
+  --danger: #f85149;
+
+  --bg: var(--brown-50);
+  --surface: var(--white);
+  --surface-sunken: var(--brown-100);
+  --border: var(--brown-200);
+  --border-strong: var(--brown-400);
+  --fg: var(--brown-900);
+  --fg-muted: var(--brown-600);
+  --fg-faint: var(--brown-400);
+  --fg-on-accent: var(--white);
+  --fg-on-dark: var(--brown-50);
+  --surface-dark: var(--brown-900);
+  --surface-dark-raised: var(--brown-800);
+
+  /* type */
+  --font-display: 'Manrope', -apple-system, sans-serif;
+  --font-body: 'Manrope', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+  --text-base: 16px;
+
+  /* spacing / shape */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-full: 999px;
+  --shadow-sm: 0 1px 2px rgba(42, 32, 25, 0.06);
+  --shadow-md: 0 2px 8px rgba(42, 32, 25, 0.08);
+  --shadow-lg: 0 8px 24px rgba(42, 32, 25, 0.12);
+  --container-max: 1120px;
+}
