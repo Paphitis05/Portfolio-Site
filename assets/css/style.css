@@ -1,4 +1,4 @@
-@import "tokens.css?v=9";
+@import "tokens.css?v=10";
 
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -290,7 +290,17 @@ a.card:hover, a.card:focus-visible {
 .timeline-desc { font-family: var(--font-body); font-size: 15px; line-height: var(--leading-relaxed); color: var(--brown-300); }
 
 /* ---------- contact page ---------- */
-.contact-section { max-width: 600px; margin: 0 auto; padding: 96px 24px 120px; }
+.contact-section {
+  max-width: 600px;
+  margin: 64px auto 96px;
+  padding: 56px 48px 64px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
 .contact-section h1 { font-family: var(--font-display); font-weight: 800; font-size: 36px; letter-spacing: var(--tracking-tight); color: var(--fg); margin-top: 16px; }
 .contact-section > p { font-size: 16px; line-height: var(--leading-relaxed); color: var(--fg-muted); margin-top: 12px; margin-bottom: 40px; }
 
@@ -381,4 +391,5 @@ a.card:hover, a.card:focus-visible {
   .page-intro h1 { font-size: 32px; }
   .timeline-item { grid-template-columns: 1fr; gap: 6px; }
   .resume-body { padding: 40px 24px 56px; margin: 24px auto 40px; }
+  .contact-section { padding: 40px 24px 48px; margin: 24px auto 40px; }
 }
