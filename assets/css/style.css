@@ -1,4 +1,4 @@
-@import "tokens.css?v=3";
+@import "tokens.css?v=4";
 
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -193,43 +193,6 @@ a.card:hover, a.card:focus-visible {
   margin-bottom: 12px;
 }
 .card-meta { display: flex; gap: 8px; flex-wrap: wrap; }
-
-.status {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-wider);
-  color: var(--fg-muted);
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.status-dot {
-  position: relative;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--fg-faint);
-  flex-shrink: 0;
-}
-.status--success .status-dot { background: var(--success); }
-.status--neutral .status-dot { background: var(--fg-faint); }
-.status--accent .status-dot { background: var(--accent); }
-.status--accent .status-dot::after {
-  content: '';
-  position: absolute;
-  inset: -5px;
-  border-radius: 50%;
-  border: 1px solid var(--accent);
-  animation: status-pulse 2.4s ease-out infinite;
-}
-@keyframes status-pulse {
-  0% { transform: scale(0.5); opacity: 0.7; }
-  100% { transform: scale(1.9); opacity: 0; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .status--accent .status-dot::after { animation: none; }
-}
 
 .tag {
   font-family: var(--font-mono);
