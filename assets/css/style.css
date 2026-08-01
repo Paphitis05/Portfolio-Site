@@ -1,4 +1,4 @@
-@import "tokens.css";
+@import "tokens.css?v=2";
 
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
