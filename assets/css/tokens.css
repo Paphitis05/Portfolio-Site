@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* color scale */
-  --brown-950: #0d1117;
-  --brown-900: #161b22;
-  --brown-800: #21262d;
-  --brown-700: #30363d;
-  --brown-600: #484f58;
-  --brown-500: #6e7681;
-  --brown-400: #8b949e;
-  --brown-300: #b1bac4;
-  --brown-200: #d0d7de;
-  --brown-100: #eaeef2;
-  --brown-50: #f6f8fa;
+  /* color scale — warm neutral (stone) */
+  --brown-950: #0c0a09;
+  --brown-900: #1c1917;
+  --brown-800: #292524;
+  --brown-700: #44403c;
+  --brown-600: #57534e;
+  --brown-500: #78716c;
+  --brown-400: #a8a29e;
+  --brown-300: #d6d3d1;
+  --brown-200: #e7e5e4;
+  --brown-100: #f5f5f4;
+  --brown-50: #fafaf9;
   --white: #ffffff;
 
-  --accent: #3b82f6;
-  --accent-dark: #2563eb;
-  --accent-light: #dbeafe;
-  --success: #3fb950;
-  --danger: #f85149;
+  --accent: #b45309;
+  --accent-dark: #92400e;
+  --accent-light: #fef3c7;
+  --success: #15803d;
+  --success-light: #dcfce7;
+  --danger: #dc2626;
 
   --bg: var(--brown-50);
   --surface: var(--white);
