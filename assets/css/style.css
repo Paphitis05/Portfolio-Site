@@ -1,4 +1,4 @@
-@import "tokens.css?v=8";
+@import "tokens.css?v=9";
 
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -143,7 +143,6 @@ body::before {
   transition: background-position 600ms ease-out;
 }
 body > * { position: relative; z-index: 1; }
-body.no-grid::before { display: none; }
 @media (prefers-reduced-motion: reduce) {
   body::before { transition: none; }
 }
@@ -328,10 +327,21 @@ a.card:hover, a.card:focus-visible {
 
 /* ---------- resume page ---------- */
 .resume-header {
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
 .resume-header .container { padding-top: 20px; padding-bottom: 20px; display: flex; align-items: center; justify-content: space-between; }
-.resume-body { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+.resume-body {
+  max-width: 760px;
+  margin: 40px auto 64px;
+  padding: 56px 48px 72px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
 .resume-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
 .resume-name { font-family: var(--font-display); font-weight: 800; font-size: 36px; letter-spacing: var(--tracking-tight); }
 .resume-title { font-family: var(--font-mono); font-size: 13px; color: var(--fg-muted); margin-top: 6px; text-transform: uppercase; letter-spacing: var(--tracking-wider); }
@@ -370,5 +380,5 @@ a.card:hover, a.card:focus-visible {
   .values-grid { grid-template-columns: 1fr; }
   .page-intro h1 { font-size: 32px; }
   .timeline-item { grid-template-columns: 1fr; gap: 6px; }
-  .resume-body { padding: 40px 20px 64px; }
+  .resume-body { padding: 40px 24px 56px; margin: 24px auto 40px; }
 }
