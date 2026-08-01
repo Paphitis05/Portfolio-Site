@@ -1,4 +1,4 @@
-@import "tokens.css?v=7";
+@import "tokens.css?v=8";
 
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -143,6 +143,7 @@ body::before {
   transition: background-position 600ms ease-out;
 }
 body > * { position: relative; z-index: 1; }
+body.no-grid::before { display: none; }
 @media (prefers-reduced-motion: reduce) {
   body::before { transition: none; }
 }
