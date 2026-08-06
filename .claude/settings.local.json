@@ -6,7 +6,8 @@
       "Bash(unzip -q \"/Users/paphitis05/Downloads/Portfolio website implementation.zip\" -d src_extract)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Read(//Users/paphitis05/Downloads/**)"
     ]
   }
 }
