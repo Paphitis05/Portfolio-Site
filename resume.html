@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Konstantinos Pafitis — Resume</title>
-<meta name="description" content="Resume of Konstantinos Pafitis — software developer and computer science student.">
+<meta name="description" content="Resume of Konstantinos Pafitis — CS student and AI researcher at Ionian University.">
 <link rel="stylesheet" href="assets/css/style.css?v=13">
 </head>
 <body>
 
 <header class="resume-header no-print">
   <div class="container">
-    <a href="index.html" class="brand">Paphitis</a>
+    <a href="index.html" class="brand">Pafitis</a>
     <nav class="site-nav">
       <a href="index.html#work">Work</a>
       <a href="about.html">About</a>
@@ -25,9 +25,10 @@
   <div class="resume-top">
     <div>
       <div class="resume-name">Konstantinos Pafitis</div>
-      <div class="resume-title">Software developer &amp; CS student</div>
+      <div class="resume-title">CS student &amp; AI researcher</div>
     </div>
-    <button class="btn btn-primary no-print" onclick="window.print()">Download PDF</button>
+    <!-- TODO: add cv.pdf to the site root (and to .cpanel.yml deploy list) -->
+    <a class="btn btn-primary no-print" href="/cv.pdf" download>Download PDF</a>
   </div>
 
   <div class="resume-contacts">
@@ -40,7 +41,7 @@
 
   <section class="resume-section">
     <div class="resume-section-title">About</div>
-    <p style="font-size:16px;line-height:var(--leading-relaxed);max-width:640px">Computer science student and full-stack developer building modern websites, scalable software, and intuitive digital experiences. I combine technical expertise with thoughtful design, continuously expanding my skills through academic research and real-world projects.</p>
+    <p style="font-size:16px;line-height:var(--leading-relaxed);max-width:640px">Third-year computer science student and assistant researcher in AI/ML, specialising in cybersecurity with a minor in AI from spring 2027. Interested in trustworthy machine learning, secure systems and ML for network security.</p>
   </section>
 
   <section class="resume-section">
@@ -52,7 +53,7 @@
           <div class="resume-entry-date">Oct 2025 — present</div>
         </div>
         <div class="resume-entry-org">HILab, Ionian University · Corfu, Greece</div>
-        <p>Contributing to AI and machine learning research, software development, and scientific publications.</p>
+        <p>Contributing to AI and machine learning research, research software and scientific publications. Researching retrieval-augmented generation (RAG) for grounding LLM output in domain-specific data; evaluating chunking strategies and retrieval quality in Python.</p>
       </div>
     </div>
   </section>
@@ -65,7 +66,8 @@
           <div class="resume-entry-role">Ionian University</div>
           <div class="resume-entry-date">2024 — 2028</div>
         </div>
-        <div class="resume-entry-org">In progress</div>
+        <div class="resume-entry-org">Computer Science · Corfu, Greece · Cybersecurity major and AI minor from spring 2027</div>
+        <p>GPA: 8.67/10 · Class rank: top 6%</p>
       </div>
       <div class="resume-entry">
         <div class="resume-entry-head">
@@ -73,6 +75,45 @@
           <div class="resume-entry-date">Aug 2026 — Jan 2027</div>
         </div>
         <div class="resume-entry-org">Erasmus+</div>
+        <p>TTM4105 — Access and Transport Networks<br>TDT4106 — Introduction to Artificial Intelligence<br>IIK3100 — Security, including a capture-the-flag (CTF) challenge series<br>Information systems group project (team of 5) — redesigning a university teaching process with generative AI, modelled in BPMN</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <div class="resume-section-title">Projects</div>
+    <div class="resume-entries">
+      <div class="resume-entry">
+        <div class="resume-entry-head">
+          <div class="resume-entry-role">RAG system research &amp; implementation</div>
+          <div class="resume-entry-date">Research · in progress</div>
+        </div>
+        <div class="resume-entry-org">HILab, Ionian University · write-up coming soon</div>
+        <p>Retrieval-augmented generation for grounding LLM output in domain-specific data.</p>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-entry-head">
+          <div class="resume-entry-role"><a href="https://github.com/Paphitis05/Anomaly-Detection-Emulation.git" target="_blank" rel="noopener">Anomaly detection emulation</a></div>
+          <div class="resume-entry-date">2025</div>
+        </div>
+        <div class="resume-entry-org">Client work · Python, scikit-learn</div>
+        <p>Isolation Forest for anomaly detection in network traffic.</p>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-entry-head">
+          <div class="resume-entry-role"><a href="https://github.com/Paphitis05/Dijkstra-Algorithm-Analysis-project" target="_blank" rel="noopener">Algorithm showcase project</a></div>
+          <div class="resume-entry-date">2026</div>
+        </div>
+        <div class="resume-entry-org">Course work · Python, Jupyter Notebook</div>
+        <p>Dijkstra's algorithm with adjacency matrix and adjacency list representations on sparse and dense graphs.</p>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-entry-head">
+          <div class="resume-entry-role">Personal note-taking tool</div>
+          <div class="resume-entry-date">2024</div>
+        </div>
+        <div class="resume-entry-org">Personal project · CRDT, SQLite · Private repo</div>
+        <p>A fast, keyboard-first notes app built to learn CRDT-based sync from scratch.</p>
       </div>
     </div>
   </section>
@@ -98,14 +139,11 @@
 
   <section class="resume-section" style="margin-bottom:0">
     <div class="resume-section-title">Skills</div>
-    <div class="skills-list">
-      <span class="skill-pill">Python</span>
-      <span class="skill-pill">Machine Learning</span>
-      <span class="skill-pill">AI Research</span>
-      <span class="skill-pill">TypeScript</span>
-      <span class="skill-pill">React</span>
-      <span class="skill-pill">Next.js</span>
-      <span class="skill-pill">MySQL</span>
+    <div class="resume-entries">
+      <div class="resume-entry"><div class="resume-entry-org">Programming</div><div class="skills-list"><span class="skill-pill">Python</span><span class="skill-pill">TypeScript</span><span class="skill-pill">SQL</span></div></div>
+      <div class="resume-entry"><div class="resume-entry-org">AI/ML</div><div class="skills-list"><span class="skill-pill">Machine Learning</span><span class="skill-pill">RAG</span><span class="skill-pill">Anomaly Detection</span><span class="skill-pill">Jupyter</span></div></div>
+      <div class="resume-entry"><div class="resume-entry-org">Web &amp; data</div><div class="skills-list"><span class="skill-pill">React</span><span class="skill-pill">Next.js</span><span class="skill-pill">MySQL</span><span class="skill-pill">SQLite</span></div></div>
+      <div class="resume-entry"><div class="resume-entry-org">Security</div><div class="skills-list"><span class="skill-pill">CTF challenges</span><span class="skill-pill">Wireshark</span><span class="skill-pill">Burp Suite</span><span class="skill-pill">Shodan</span><span class="skill-pill">Linux</span></div></div>
     </div>
   </section>
 </main>
