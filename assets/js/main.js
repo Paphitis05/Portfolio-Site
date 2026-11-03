@@ -3,10 +3,10 @@
   // real server (Apache already serves index.html at "/" automatically —
   // this is purely cosmetic). Skipped under file:// so local double-click
   // previews are untouched.
-  if (location.protocol !== 'file:' && /\/index\.html$/.test(location.pathname)) {
-    var cleanPath = location.pathname.replace(/index\.html$/, '');
-    history.replaceState(null, '', cleanPath + location.search + location.hash);
-  }
+  // if (location.protocol !== 'file:' && /\/index\.html$/.test(location.pathname)) {
+  //  var cleanPath = location.pathname.replace(/index\.html$/, '');
+  //   history.replaceState(null, '', cleanPath + location.search + location.hash);
+  //}
 
   var header = document.querySelector('.site-header');
   if (header) {
